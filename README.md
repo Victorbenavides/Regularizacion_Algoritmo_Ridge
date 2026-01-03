@@ -1,1 +1,5 @@
 # Regularizacion_Algoritmo_Ridge
+
+En esta sección del código estamos aplicando la Regularización Ridge (también conocida como Tikhonov) para controlar cómo se ajusta nuestro modelo de regresión a los datos. Lo que hacemos primero es generar una muestra de datos sintéticos con ruido y definir un hiperparámetro llamado alpha, el cual determina qué tan fuerte será la penalización para evitar que el modelo se vuelva demasiado complejo. Al principio, probamos con un alpha bajo y vemos que la línea de regresión roja se ajusta casi perfectamente a los puntos azules. Sin embargo, conforme aumentamos el valor de alpha (llevándolo a 10 o incluso a 100), observamos cómo la pendiente de la línea disminuye y se vuelve más plana; esto sucede porque la regularización está "castigando" los coeficientes para evitar el sobreajuste (overfitting), sacrificando un poco de precisión exacta para ganar un modelo más estable y generalizable.
+
+<img width="1033" height="787" alt="image" src="https://github.com/user-attachments/assets/e21dceec-da45-4854-8f97-17ed811d224e" />
